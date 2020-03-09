@@ -1,8 +1,6 @@
 pipeline {
 
-   agent {
-           label 'jenkins-slave-node'
-       }
+   agent any
    stages {
       stage('Clone') {
          steps {
