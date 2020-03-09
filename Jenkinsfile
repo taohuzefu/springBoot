@@ -1,5 +1,5 @@
 pipeline {
-   agent(jenkins-slave-node)
+   node(jenkins-slave-node)
 
    stages {
       stage('Clone') {
