@@ -1,9 +1,11 @@
-node(jenkins-slave-node){
+pipeline {
 
+   agent {
+           docker { image 'node:7-alpine' }
+       }
    stages {
       stage('Clone') {
          steps {
-            sh 'node --version'
             git 'https://github.com/taohuzefu/springBoot.git'
          }
 
