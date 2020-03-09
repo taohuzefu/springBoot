@@ -1,5 +1,4 @@
-pipeline {
-   node(jenkins-slave-node)
+node(jenkins-slave-node){
 
    stages {
       stage('Clone') {
