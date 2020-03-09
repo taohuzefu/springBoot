@@ -1,7 +1,5 @@
 pipeline {
-   agent {
-           docker { image 'node:7-alpine' }
-       }
+   agent(jenkins-slave-node)
 
    stages {
       stage('Clone') {
