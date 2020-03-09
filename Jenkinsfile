@@ -4,6 +4,7 @@ pipeline {
    stages {
       stage('Clone') {
          steps {
+            sh 'ls'
             git 'https://github.com/taohuzefu/springBoot.git'
          }
 
